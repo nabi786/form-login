@@ -1,0 +1,282 @@
+/* main fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.mainBox{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+
+}
+
+
+.formOuterBox{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ImageBox{
+    width: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ImageBox::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+     background-color: rgba(27, 20, 100,0.3)
+}
+
+
+
+.form_title h2{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    text-align: center;
+}
+.form_title{
+    text-align: center;
+}
+.form_title p{
+    font-weight: 600;
+}
+
+.form_title{
+    font-family: 'Poppins', sans-serif;
+}
+
+.form_Social_media_Icons{
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    font-weight: 500;
+   
+}
+.form_social_media_icon{
+    
+    border-radius: 50px;
+    /* width: 110px; */
+    text-align: center;
+    position: relative;
+    display: flex;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0,0.2);
+}
+
+.facebook_icon{
+    color: white;
+    background-color: #4267B2;
+    
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+   
+}
+.facebook_icon svg path{
+    fill: white;
+
+}
+.facebook_icon svg{
+    width: 10px;
+}
+.twitter_icon svg{
+    width: 13px;
+}
+.google_icon svg{
+    width: 13px;
+}
+.icon_title{
+    display: block;
+    margin: auto;
+    font-size: 14px;
+    /* border: 1px solid red; */
+    padding: 0px 15px;
+    padding-left: 8px;
+}
+
+.facebook_icon_box .icon_title{
+    color: #4267B2;
+}
+
+.twitter_icon{
+    background-color: #1DA1F2;
+}
+.twitter_icon_box .icon_title{
+    color: #1DA1F2;
+}
+
+.google_icon{
+    background-color: #df3500;
+}
+.google_icon_Box .icon_title{
+    color: #df3500;
+}
+
+.twitter_icon_box{
+    margin: 0px 5px;
+}
+
+.or_box{
+    border-bottom: 1px solid lightgray;
+    position: relative;
+    margin: 30px 0px;
+}
+.or_box span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    padding: 0px 10px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 300;
+}
+
+.ipnut_field{
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    padding: 20px !important;
+}
+.inputBox{
+    position: relative;
+    
+}
+.inputBox i{
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    transform: translate(-50%,-50%);
+    color: gray;
+}
+.inputBox img{
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(-50%,-50%);
+}
+
+.checkBoxOuterBox{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+.checkBoxOuterBox a{
+    font-family: 'Poppins', sans-serif;
+}
+
+.submit_Btn input{
+    background-color: #fd0100;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 50px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0,0.05);
+    transition: 0.3s;
+}
+.submit_Btn input:hover{
+    color: #fd0100;
+    background-color: white;
+}
+
+
+
+.ImageBoxText{
+    z-index: 111;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    width: 90%;
+}
+.ImageBoxText h2{
+    text-transform: uppercase;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.ImageBoxText{
+    font-size: 14px;
+}
+
+.ImageBoxText p{
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+/* Responsive */
+@media only screen and (max-width:990px){
+    
+    .formOuterBox{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 111;
+        background-color: white;
+        border-radius: 5px;
+        width: 400px;
+        padding: 10px;
+    }
+    .ImageBox{
+        width: 100%;
+    }
+    .ImageBoxText{
+        display: none;
+    }
+}
+
+
+
+
+@media only screen and (max-width:440px){
+    .formOuterBox{
+      
+        width: 90%;
+        
+    }
+    .form_Social_media_Icons{
+        flex-wrap: wrap;
+    }
+    .form_social_media_icon{
+        margin-top: 10px;
+    }
+    .checkBoxOuterBox{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .form_Social_media_Icons{
+        justify-content: center;
+        align-items: center;
+    }
+}
